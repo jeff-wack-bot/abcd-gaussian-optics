@@ -1,0 +1,29 @@
+== 1. ABCD law and Gouy phase vs. direct wave propagation ==
+n=0: det M=1.000000000000  |<pred|num>|=1.0000000000  phase err=+2.30e-13 rad   sum arg = 5.9207, principal arg(A+B/q0) = -0.3625
+n=1: det M=1.000000000000  |<pred|num>|=0.9999999997  phase err=-6.53e-12 rad   sum arg = 5.9207, principal arg(A+B/q0) = -0.3625
+n=2: det M=1.000000000000  |<pred|num>|=0.9999999933  phase err=+2.43e-10 rad   sum arg = 5.9207, principal arg(A+B/q0) = -0.3625
+n=3: det M=1.000000000000  |<pred|num>|=0.9999998983  phase err=-2.15e-09 rad   sum arg = 5.9207, principal arg(A+B/q0) = -0.3625
+
+== 2. Mode overlap = hyperbolic distance ==
+|<a|b>|^2 = 0.9918306720   sech(d/2) = 0.9918306720   (d=0.257)
+|<a|b>|^2 = 0.9353735005   sech(d/2) = 0.9353735005   (d=0.739)
+|<a|b>|^2 = 0.6791552587   sech(d/2) = 0.6791552587   (d=1.875)
+|<a|b>|^2 = 0.9702190064   sech(d/2) = 0.9702190064   (d=0.494)
+
+== 3. Second moments: Sigma = (lambdabar/2|Im q|) Re(v v^H), v=(q,1); Sigma -> M Sigma M^T ==
+predicted
+ [[5.30516477e-02 2.65258238e-05]
+ [2.65258238e-05 1.32629119e-07]] 
+numerical
+ [[5.30516477e-02 2.65256748e-05]
+ [2.65256748e-05 1.32629119e-07]]
+det Sigma / (lambdabar/2)^2 = 1.000001248349747  (=1: minimum uncertainty, M^2 = 1)
+
+== 4. Resonator: eigenvalue of the complex ray = round-trip Gouy factor ==
+(A+D)/2 = -0.5200; fixed point q = -415.385-492.788j; Cq+D = -0.520000+0.854166j (|.|=1.000000000000)
+arccos((A+D)/2) = 2.117647, arg(Cq+D) = 2.117647
+textbook: round-trip Gouy (one transverse dim) = arccos(+-sqrt(g1 g2)) -> 2*arccos(sqrt(g1g2))=2.117647
+numerical round trip: |<u|Uu>| = 1.00000000, phase = -1.058824; predicted -arg(Cq+D)/2 = -1.058824
+
+== 5. Metaplectic sign: a full period of a GRIN guide gives M = I but u -> -u (1D) ==
+<u0|u(one period)> = -1.000000+0.000000j   (ray matrix of one period = identity)

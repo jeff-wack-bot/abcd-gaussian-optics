@@ -1,0 +1,8 @@
+z1=-0.7 z2=+1.9:  area/4 = 0.848522   |Delta phi_G| (1D) = 0.848522
+z1=-3.0 z2=-0.2:  area/4 = 0.723221   |Delta phi_G| (1D) = 0.525825
+z1=+0.3 z2=+5.0:  area/4 = 0.832429   |Delta phi_G| (1D) = 0.540972
+signed version: area = difference of triangles (0, tau, inf), each of area pi - angle, signed by side of waist
+z1=-0.7 z2=+1.9:  signed area/4 = 0.848522   Delta(1/2 arctan) = 0.848522
+z1=-3.0 z2=-0.2:  signed area/4 = 0.525825   Delta(1/2 arctan) = 0.525825
+z1=+0.3 z2=+5.0:  signed area/4 = 0.540972   Delta(1/2 arctan) = 0.540972
+z1=-10.0 z2=+10.0:  signed area/4 = 1.471128   Delta(1/2 arctan) = 1.471128
